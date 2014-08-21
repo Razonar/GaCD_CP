@@ -1,12 +1,14 @@
+# Starts
 
 library(plyr)
 
-# download.file(
-#     "https://d396qusza40orc.cloudfront.net/getdata/projectfiles/UCI%20HAR%20Dataset.zip",
-#     destfile="data.zip",
-#     method="wget")
-# unzip("data.zip")
+download.file(https://d396qusza40orc.cloudfront.net/getdata/projectfiles/UCI%20HAR%20Dataset.zip",
+     destfile="data.zip",
+     method="wget")
+unzip("data.zip")
+
 setwd("UCI HAR Dataset") # Working dir
+
 AS <- c(562, 563)        # To keep activitys and subjects
 
 # Labels the data with descriptive variable names

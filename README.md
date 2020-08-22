@@ -1,5 +1,7 @@
 # Getting and Cleaning Data Course Project.
 
+Alvaro Diaz Falconi, August 2020.
+
 The purpose of this proyect is to demonstrate my ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. 
 
 ## Dataset
@@ -28,4 +30,3 @@ The R-script contains all code to build my solution to the problem given. Can be
 The script download the data file, uncompress it, changes the directory to the *UCI HAR Dataset* extracted from the download and executes all functions there and writes the data into the fil **TiddySet.txt**.
 
 Finally, more descriptions are avaible in th file **CodeBook.md**.
-

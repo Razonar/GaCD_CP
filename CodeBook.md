@@ -1,5 +1,7 @@
 # Code Book
 
+Alvaro Diaz Falconi, August 2020.
+
 This file describes the variables, the data, and transformations that was performed to clean up the data.
 
 ## Main Variables
@@ -35,5 +37,3 @@ Used grep to select only the column containing the std or the mean of each varia
 ### M3
 
 Used aggregate to group by subject and activity.
-
-

@@ -1,3 +1,6 @@
+# Analysys for cleaning the data.
+# Alvaro Diaz Falconi, August 2020.
+
 # Starts
 
 library(plyr)

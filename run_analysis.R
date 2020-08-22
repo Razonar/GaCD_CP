@@ -2,10 +2,13 @@
 
 library(plyr)
 
-download.file(https://d396qusza40orc.cloudfront.net/getdata/projectfiles/UCI%20HAR%20Dataset.zip",
-     destfile="data.zip",
-     method="wget")
-unzip("data.zip")
+# Download the data.
+if (!dir.exists('UCI HAR Dataset')) {
+  url_dataset = 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
+  filename <- 'UCI HAR Dataset.zip'
+  download.file(url_dataset, filename)
+  unzip(filename)
+}
 
 setwd("UCI HAR Dataset") # Working dir
 
@@ -58,5 +61,5 @@ MN <- gsub(".std..",    " Std average",   MN)
 MN <- gsub(".mean..",   " Mean average",  MN)
 colnames(TiddySet) <- MN
 
-write.table(TiddySet, "TiddySet.txt")
-
+write.table(TiddySet, "TiddySet.txt")           # The final output.
+file.copy("TiddySet.txt","../TiddySet.txt")
